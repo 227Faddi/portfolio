@@ -1,8 +1,8 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, SquareCode } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Serigne Falilou Khouma",
+  name: "Falilou Khouma",
   initials: "SK",
   url: "https://faliloukhouma.com/",
   location: "Montrèal, QC",
@@ -10,7 +10,7 @@ export const DATA = {
   description: "Full Stack Software Developer",
   summary:
     "Specialized in web development, building design-focused frontends with React and JavaScript and efficient backends with Node.js. Passionate about creating secure, scalable applications that empower businesses and deliver value to users.",
-  avatarUrl: "https://faliloukhouma.com/assets/img/profile.webp",
+  avatarUrl: "./me.png",
   skills: [
     "HTML",
     "CSS",
@@ -23,11 +23,9 @@ export const DATA = {
     "Tailwind CSS",
     "Bootstrap",
     "CI/CD",
+    "Git",
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "#projects", icon: SquareCode, label: "Projects" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "falukhouma27@gmail.com",
     tel: "+15149621927",
@@ -66,11 +64,11 @@ export const DATA = {
   work: [
     {
       company: "MTL Web Designs",
-      href: "https://atomic.finance",
+      href: "",
       badges: [],
       location: "Montrèal, QC",
       title: "Full Stack Software Developer",
-      logoUrl: "/atomic.png",
+      logoUrl: "./coding.png",
       start: "October 2024",
       end: "Present",
       description:
@@ -82,7 +80,7 @@ export const DATA = {
       href: "https://100devs.org/",
       location: "Remote",
       title: "Full Stack Software Developer",
-      logoUrl: "https://100devs.org/images/logo.png",
+      logoUrl: "./100devs.png",
       start: "October 2023",
       end: "Present",
       description:
@@ -91,111 +89,67 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
-      end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
+      school: "I.T. Attilio Deffenu",
+      href: "https://www.deffenu.edu.it/",
+      degree: "Diploma in Administration, Finance, and Marketing",
+      logoUrl: "./deffenu.png",
       start: "2016",
       end: "2021",
     },
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Istana Loft",
+      href: "https://istanaloft.netlify.app",
       active: true,
+      dates: "",
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
+      technologies: ["JavaScript", "React", "TailwindCSS", "i18next"],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://istanaloft.netlify.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/227Faddi/istana-loft",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      video: "istanaloft.mp4",
     },
     {
       title: "Momentum",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      href: "https://momentum-n9xf.onrender.com",
       active: true,
+      dates: "",
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "A goal-setting and productivity app designed to help users track personal, career, and financial goals. It includes a rewarding point system to boost motivation and keep users engaged as they achieve their objectives.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "JavaScript",
+        "React",
+        "MongoDB",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Node.js",
+        "JWT",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://momentum-n9xf.onrender.com",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/227Faddi/momentum",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-  ],
-  hackathons: [
-    {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
-      description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
+      video: "./momentum.mp4",
     },
   ],
 } as const;
