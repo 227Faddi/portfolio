@@ -206,15 +206,29 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Looking to build a website or app, or up for a coffee chat? Feel
+                free to reach out via{" "}
+                <Link
+                  href={DATA.contact.social.Email.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  Email
+                </Link>{" "}
+                or send me a direct message on{" "}
+                <Link
+                  href={DATA.contact.social.LinkedIn.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  LinkedIn
+                </Link>{" "}
+                or{" "}
                 <Link
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                  X
+                </Link>
+                .
               </p>
             </div>
           </BlurFade>
@@ -223,3 +237,6 @@ export default function Page() {
     </main>
   );
 }
+
+// Looking to build a website or software, or up for a coffee chat?
+// Feel free to reach out via email or send me a message on LinkedIn or X. I’ll get back to you as soon as possible.

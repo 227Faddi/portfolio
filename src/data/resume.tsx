@@ -3,13 +3,14 @@ import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Falilou Khouma",
-  initials: "SK",
+  initials: "FK",
   url: "https://faliloukhouma.com/",
   location: "Montrèal, QC",
   locationLink: "https://www.google.com/maps/place/montreal",
-  description: "Full Stack Software Developer",
+  description:
+    "a Full Stack Developer. I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
-    "Specialized in web development, building design-focused frontends with React and JavaScript and efficient backends with Node.js. Passionate about creating secure, scalable applications that empower businesses and deliver value to users.",
+    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I craft intuitive, design-driven frontends with React and Typescript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
   avatarUrl: "./me.png",
   skills: [
     "HTML",
@@ -24,6 +25,9 @@ export const DATA = {
     "Bootstrap",
     "CI/CD",
     "Git",
+    "GitHub",
+    "Vercel",
+    "Netlify",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -67,12 +71,12 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Montrèal, QC",
-      title: "Full Stack Software Developer",
+      title: "Software Developer",
       logoUrl: "./coding.png",
       start: "October 2024",
       end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
+        "Helped small businesses enhance their online presence by building websites tailored to their specific needs, enabling them to reach more clients and grow their customer base.",
     },
     {
       company: "100Devs",
@@ -84,7 +88,7 @@ export const DATA = {
       start: "October 2023",
       end: "Present",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
+        "Designed and delivered multiple responsive web applications and websites, collaborating with a team of developers to implement best practices and tailor solutions to client needs, resulting in increased online engagement.",
     },
   ],
   education: [
