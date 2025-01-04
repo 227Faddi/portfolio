@@ -11,7 +11,7 @@ export const DATA = {
     "a Full Stack Developer. I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
     "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I craft intuitive, design-driven frontends with React and Typescript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
-  avatarUrl: "./me.png",
+  avatarUrl: "./me.webp",
   skills: [
     "HTML",
     "CSS",
@@ -72,7 +72,7 @@ export const DATA = {
       badges: [],
       location: "Montrèal, QC",
       title: "Software Developer",
-      logoUrl: "./coding.png",
+      logoUrl: "./coding.webp",
       start: "October 2024",
       end: "Present",
       description:
@@ -84,7 +84,7 @@ export const DATA = {
       href: "https://100devs.org/",
       location: "Remote",
       title: "Full Stack Software Developer",
-      logoUrl: "./100devs.png",
+      logoUrl: "./100devs.webp",
       start: "October 2023",
       end: "Present",
       description:
@@ -96,7 +96,7 @@ export const DATA = {
       school: "I.T. Attilio Deffenu",
       href: "https://www.deffenu.edu.it/",
       degree: "Diploma in Administration, Finance, and Marketing",
-      logoUrl: "./deffenu.png",
+      logoUrl: "./deffenu.webp",
       start: "2016",
       end: "2021",
     },
