@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "a Full Stack Developer. I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
-    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and JavaScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
+    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
   avatarUrl: "./me.webp",
   skills: [
     "HTML",
@@ -28,6 +28,7 @@ export const DATA = {
     "GitHub",
     "Vercel",
     "Netlify",
+    "Render",
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
