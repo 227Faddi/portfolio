@@ -119,6 +119,7 @@ export const DATA = {
         "MySQL",
         "Node.js",
         "GitHub Actions",
+        "TanStack Query",
       ],
       links: [
         {
@@ -155,36 +156,36 @@ export const DATA = {
       video:
         "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
     },
-    {
-      title: "Momentum",
-      href: "https://momentum-n9xf.onrender.com",
-      active: true,
-      dates: "",
-      description:
-        "A goal-setting and productivity app designed to help users track personal, career, and financial goals. It includes a rewarding point system to boost motivation and keep users engaged as they achieve their objectives.",
-      technologies: [
-        "JavaScript",
-        "React",
-        "MongoDB",
-        "TailwindCSS",
-        "Node.js",
-        "TanStack Query",
-        "GitHub Actions",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://momentum-n9xf.onrender.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/momentum",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "./momentum.mp4",
-    },
+    // {
+    //   title: "Momentum",
+    //   href: "https://momentum-n9xf.onrender.com",
+    //   active: true,
+    //   dates: "",
+    //   description:
+    //     "A goal-setting and productivity app designed to help users track personal, career, and financial goals. It includes a rewarding point system to boost motivation and keep users engaged as they achieve their objectives.",
+    //   technologies: [
+    //     "JavaScript",
+    //     "React",
+    //     "MongoDB",
+    //     "TailwindCSS",
+    //     "Node.js",
+    //     "TanStack Query",
+    //     "GitHub Actions",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://momentum-n9xf.onrender.com",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/227Faddi/momentum",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video: "./momentum.mp4",
+    // },
   ],
 } as const;
