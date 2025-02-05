@@ -1,46 +1,42 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
+# [Portfolio](https://faliloukhouma.com) - Falilou Khouma
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+https://github.com/user-attachments/assets/e6df46ca-952b-4c4f-a481-6d8fa6b9af14
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel
+## 📖 Description
 
-# Features
+A minimal portfolio template to showcase your work and experience. Made from https://magicui.design/docs/templates/portfolio
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
+## 📊 Features
+
+- Setup in a few minutes by editing the [config file](./src/data/resume.tsx)
 - Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
+- Blog included
 - Responsive for different devices
 - Optimized for Next.js and Vercel
 
-# Getting Started Locally
+## 🛠 Tech Stack
 
-1. Clone this repository to your local machine:
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+## 🚀 Getting Started
 
-2. Move to the cloned directory
+### 📦 Installation
 
-   ```bash
-   cd portfolio
-   ```
+```
+git clone git@github.com:227Faddi/portfolio.git
+```
 
-3. Install dependencies:
+```
+pnpm install
+```
 
-   ```bash
-   pnpm install
-   ```
+### ▶️ Running the Project
 
-4. Start the local Server:
+```
+pnpm dev
+```
 
-   ```bash
-   pnpm dev
-   ```
-
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+Open the [Config file](./src/data/resume.tsx) to make changes
 
 # License
 
