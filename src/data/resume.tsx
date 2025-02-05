@@ -11,7 +11,8 @@ export const DATA = {
     "a Full Stack Developer. I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
     "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
-  avatarUrl: "./me.webp",
+  avatarUrl:
+    "https://avatars.githubusercontent.com/u/126704343?s=400&u=4baef2e2dfd3f38fe5620c30ba83776558d8d4f1&v=4",
   skills: [
     "HTML",
     "CSS",
@@ -26,6 +27,7 @@ export const DATA = {
     "CI/CD",
     "Git",
     "GitHub",
+    "GitHub Actions",
     "Vercel",
     "Netlify",
     "Render",
@@ -104,6 +106,37 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Lead Flow",
+      href: "https://app.leadflow.buzz",
+      active: true,
+      dates: "",
+      description:
+        "A custom CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
+      technologies: [
+        "TypeScript",
+        "React",
+        "TailwindCSS",
+        "MySQL",
+        "Node.js",
+        "GitHub Actions",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://app.leadflow.buzz",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/227Faddi/leadflow",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
+    },
+    {
       title: "Istana Loft",
       href: "https://istanaloft.netlify.app",
       active: true,
@@ -117,14 +150,10 @@ export const DATA = {
           href: "https://istanaloft.netlify.app",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/istana-loft",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "",
-      video: "istanaloft.mp4",
+      video:
+        "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
     },
     {
       title: "Momentum",
@@ -139,7 +168,8 @@ export const DATA = {
         "MongoDB",
         "TailwindCSS",
         "Node.js",
-        "JWT",
+        "TanStack Query",
+        "GitHub Actions",
       ],
       links: [
         {
