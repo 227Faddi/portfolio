@@ -1,4 +1,3 @@
-import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
@@ -207,12 +206,12 @@ export default function Page() {
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Looking to build a website or app, or up for a coffee chat? Feel
-                free to reach out via{" "}
+                free to schedule a meeting{" "}
                 <Link
-                  href={DATA.contact.social.Email.url}
+                  href={DATA.contact.social.Call.url}
                   className="text-blue-500 hover:underline"
                 >
-                  Email
+                  Here
                 </Link>{" "}
                 or send me a direct message on{" "}
                 <Link
