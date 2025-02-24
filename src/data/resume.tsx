@@ -20,6 +20,7 @@ export const DATA = {
     "React",
     "TypeScript",
     "Node.js",
+    "Next.js",
     "MySQL",
     "MongoDB",
     "Tailwind CSS",
@@ -128,7 +129,7 @@ export const DATA = {
         "TailwindCSS",
         "MySQL",
         "Node.js",
-        "GitHub Actions",
+        "CI/CD",
         "TanStack Query",
       ],
       links: [
@@ -161,7 +162,7 @@ export const DATA = {
         "Node.js",
         "MongoDB",
         "Redux",
-        "GitHub Actions",
+        "CI/CD",
       ],
       links: [
         {
@@ -186,7 +187,7 @@ export const DATA = {
       dates: "",
       description:
         "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
-      technologies: ["JavaScript", "React", "TailwindCSS", "i18next"],
+      technologies: ["TypeScript", "React", "Next.js", "TailwindCSS", "CI/CD"],
       links: [
         {
           type: "Website",
