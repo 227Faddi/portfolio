@@ -21,13 +21,14 @@ export const DATA = {
     "TypeScript",
     "Node.js",
     "Next.js",
-    "MySQL",
-    "MongoDB",
     "Tailwind CSS",
     "Bootstrap",
     "Redux",
     "RTK Query",
     "TanStack Query",
+    "MySQL",
+    "MongoDB",
+    "PostgreSQL",
     "CI/CD",
     "Git",
     "GitHub",
@@ -148,38 +149,38 @@ export const DATA = {
       video:
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
-    {
-      title: "Momentum",
-      href: "https://momentumgoal.netlify.app",
-      active: true,
-      dates: "",
-      description:
-        "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
-      technologies: [
-        "TypeScript",
-        "React",
-        "TailwindCSS",
-        "Node.js",
-        "MongoDB",
-        "Redux",
-        "CI/CD",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://momentumgoal.netlify.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/momentum",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
-    },
+    // {
+    //   title: "Momentum",
+    //   href: "https://momentumgoal.netlify.app",
+    //   active: true,
+    //   dates: "",
+    //   description:
+    //     "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
+    //   technologies: [
+    //     "TypeScript",
+    //     "React",
+    //     "TailwindCSS",
+    //     "Node.js",
+    //     "MongoDB",
+    //     "Redux",
+    //     "CI/CD",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://momentumgoal.netlify.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/227Faddi/momentum",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
+    // },
     {
       title: "Istana Loft",
       href: "https://istanaloft.netlify.app",
@@ -200,4 +201,26 @@ export const DATA = {
         "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
     },
   ],
+  // hackathons: [
+  //   {
+  //     title: "ConFoo",
+  //     dates: "November 23rd - 25th, 2018",
+  //     location: "Montréal, Québec",
+  //     description:
+  //       "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+  //     image: "https://confoo.ca/images/design/logo.png",
+  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+  //     links: [],
+  //   },
+  //   {
+  //     title: "ConFoo",
+  //     dates: "November 23rd - 25th, 2018",
+  //     location: "Montréal, Québec",
+  //     description:
+  //       "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+  //     image: "https://confoo.ca/images/design/logo.png",
+  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+  //     links: [],
+  //   },
+  // ],
 } as const;
