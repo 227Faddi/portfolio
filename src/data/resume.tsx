@@ -183,7 +183,7 @@ export const DATA = {
     // },
     {
       title: "Istana Loft",
-      href: "https://istanaloft.netlify.app",
+      href: "https://www.istanaloft.com",
       active: true,
       dates: "",
       description:
@@ -192,7 +192,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://istanaloft.netlify.app",
+          href: "https://www.istanaloft.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
