@@ -149,38 +149,38 @@ export const DATA = {
       video:
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
-    // {
-    //   title: "Momentum",
-    //   href: "https://momentumgoal.netlify.app",
-    //   active: true,
-    //   dates: "",
-    //   description:
-    //     "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
-    //   technologies: [
-    //     "TypeScript",
-    //     "React",
-    //     "TailwindCSS",
-    //     "Node.js",
-    //     "MongoDB",
-    //     "Redux",
-    //     "CI/CD",
-    //   ],
-    //   links: [
-    //     {
-    //       type: "Website",
-    //       href: "https://momentumgoal.netlify.app",
-    //       icon: <Icons.globe className="size-3" />,
-    //     },
-    //     {
-    //       type: "Source",
-    //       href: "https://github.com/227Faddi/momentum",
-    //       icon: <Icons.github className="size-3" />,
-    //     },
-    //   ],
-    //   image: "",
-    //   video:
-    //     "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
-    // },
+    {
+      title: "Momentum",
+      href: "https://momentumgoal.netlify.app",
+      active: true,
+      dates: "",
+      description:
+        "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
+      technologies: [
+        "TypeScript",
+        "React",
+        "TailwindCSS",
+        "Node.js",
+        "MongoDB",
+        "Redux",
+        "CI/CD",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://momentumgoal.netlify.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/227Faddi/momentum",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
+    },
     {
       title: "Istana Loft",
       href: "https://www.istanaloft.com",
