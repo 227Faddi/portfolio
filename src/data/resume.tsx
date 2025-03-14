@@ -150,6 +150,25 @@ export const DATA = {
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
     {
+      title: "Istana Loft",
+      href: "https://www.istanaloft.com",
+      active: true,
+      dates: "",
+      description:
+        "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
+      technologies: ["TypeScript", "React", "Next.js", "TailwindCSS", "CI/CD"],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.istanaloft.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
+    },
+    {
       title: "Momentum",
       href: "https://momentumgoal.netlify.app",
       active: true,
@@ -180,25 +199,6 @@ export const DATA = {
       image: "",
       video:
         "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
-    },
-    {
-      title: "Istana Loft",
-      href: "https://www.istanaloft.com",
-      active: true,
-      dates: "",
-      description:
-        "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
-      technologies: ["TypeScript", "React", "Next.js", "TailwindCSS", "CI/CD"],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.istanaloft.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
     },
   ],
   // hackathons: [
