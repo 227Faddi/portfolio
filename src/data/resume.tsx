@@ -12,7 +12,7 @@ export const DATA = {
   summary:
     "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
   avatarUrl:
-    "https://avatars.githubusercontent.com/u/126704343?s=400&u=4baef2e2dfd3f38fe5620c30ba83776558d8d4f1&v=4",
+    "https://media.licdn.com/dms/image/v2/D4E03AQHR0ObSpdTvaw/profile-displayphoto-shrink_400_400/B4EZYRvis9HcAg-/0/1744054398157?e=1749686400&v=beta&t=dYbf1sfvix0vSWcdq83Xs_nHAhBIMhXflZjxdHK3gxg",
   skills: [
     "HTML",
     "CSS",
@@ -21,6 +21,8 @@ export const DATA = {
     "TypeScript",
     "Node.js",
     "Next.js",
+    "Python",
+    "Flask",
     "Tailwind CSS",
     "Bootstrap",
     "Redux",
