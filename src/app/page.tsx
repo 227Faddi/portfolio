@@ -209,12 +209,16 @@ export default function Page() {
                 free to schedule a meeting{" "}
                 <Link
                   href={DATA.contact.social.Call.url}
+                  rel="noopener noreferrer"
+                  target="_blank"
                   className="text-blue-500 hover:underline"
                 >
                   Here
                 </Link>{" "}
                 or send me a direct message on{" "}
                 <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
                   href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
@@ -222,6 +226,8 @@ export default function Page() {
                 </Link>{" "}
                 or{" "}
                 <Link
+                  rel="noopener noreferrer"
+                  target="_blank"
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
