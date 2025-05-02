@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { Coffee, HomeIcon } from "lucide-react";
+import { BriefcaseBusiness, Coffee, Contact, HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Falilou Khouma",
@@ -13,19 +13,18 @@ export const DATA = {
     "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
   avatarUrl: "./profile-photo.png",
   skills: [
-    "HTML",
-    "CSS",
     "JavaScript",
-    "React",
     "TypeScript",
-    "Node.js",
-    "Next.js",
+    "React",
     "Python",
+    "Next.js",
+    "Node.js",
     "Flask",
     "Tailwind CSS",
     "Bootstrap",
     "Redux",
-    "RTK Query",
+    "React Native",
+    "Expo",
     "TanStack Query",
     "MySQL",
     "MongoDB",
@@ -36,9 +35,12 @@ export const DATA = {
     "GitHub Actions",
     "Vercel",
     "Netlify",
-    "Render",
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/#projects", icon: BriefcaseBusiness, label: "Work" },
+    { href: "/#contact", icon: Contact, label: "Contact" },
+  ],
   contact: {
     email: "falukhouma27@gmail.com",
     tel: "+15149621927",
@@ -124,15 +126,46 @@ export const DATA = {
       active: true,
       dates: "",
       description:
-        "A custom CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
+        "A CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
       technologies: [
         "TypeScript",
         "React",
-        "TailwindCSS",
+        "Tailwind CSS",
         "MySQL",
         "Node.js",
         "CI/CD",
         "TanStack Query",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://app.leadflow.buzz",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/227Faddi/leadflow",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video:
+        "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
+    },
+    {
+      title: "Fix Sleep",
+      href: "https://app.leadflow.buzz",
+      active: true,
+      dates: "",
+      description:
+        "A CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
+      technologies: [
+        "TypeScript",
+        "React Native",
+        "Expo",
+        "NativeWind",
+        "Next.js",
+        "Tailwind CSS",
       ],
       links: [
         {
@@ -157,7 +190,7 @@ export const DATA = {
       dates: "",
       description:
         "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
-      technologies: ["TypeScript", "React", "Next.js", "TailwindCSS", "CI/CD"],
+      technologies: ["TypeScript", "React", "Next.js", "Tailwind CSS", "CI/CD"],
       links: [
         {
           type: "Website",
@@ -179,7 +212,7 @@ export const DATA = {
       technologies: [
         "TypeScript",
         "React",
-        "TailwindCSS",
+        "Tailwind CSS",
         "Node.js",
         "MongoDB",
         "Redux",
