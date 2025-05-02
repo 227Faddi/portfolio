@@ -1,5 +1,11 @@
 import { Icons } from "@/components/icons";
-import { BriefcaseBusiness, Coffee, Contact, HomeIcon } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  Code2,
+  Coffee,
+  Contact,
+  HomeIcon,
+} from "lucide-react";
 
 export const DATA = {
   name: "Falilou Khouma",
@@ -38,6 +44,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/#skills", icon: Code2, label: "Tech Stack" },
     { href: "/#projects", icon: BriefcaseBusiness, label: "Work" },
     { href: "/#contact", icon: Contact, label: "Contact" },
   ],
