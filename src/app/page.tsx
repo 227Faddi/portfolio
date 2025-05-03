@@ -2,7 +2,7 @@
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { BorderBeam } from "@/components/magicui/border-beam.tsx";
+import { BorderBeam } from "@/components/magicui/border-beam";
 import { Dock, DockIcon } from "@/components/magicui/dock";
 import { ProjectCard } from "@/components/project-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -16,9 +16,10 @@ import {
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, Share2Icon } from "lucide-react";
+import { BellIcon, PartyPopper } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import GitHubCalendar from "react-github-calendar";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -31,32 +32,44 @@ const features = [
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
-    background: "./public/coding.we",
+    background: "",
   },
   {
     Icon: BellIcon,
     name: "Notifications",
-    description: "Get notified when something happens.",
+    description: "I Love Being part of the community",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
     background: (
-      <Image src={"/./confoo.jpg"} alt={"sdf"} fill className="object-cover" />
+      <Image
+        src={"/./me.webp"}
+        alt={"sdf"}
+        fill
+        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+      />
     ),
   },
   {
-    Icon: Share2Icon,
-    name: "Integrations",
+    Icon: PartyPopper,
+    name: "Volunteering at Confoo.Ca",
     description: "Supports 100+ integrations and counting.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
-    background: "",
+    background: (
+      <Image
+        src={"/./confoo.jpg"}
+        alt={"volunteers group photo"}
+        fill
+        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+      />
+    ),
   },
   {
     Icon: CalendarIcon,
-    name: "Calendar",
-    description: "Use the calendar to filter your files by date.",
+    name: "Let's Talk!",
+    description: "I love to meet people let's have a coffee chat.",
     className: "col-span-3 lg:col-span-1",
     href: "#",
     cta: "Learn more",
@@ -114,7 +127,7 @@ export default function Page() {
           ))}
         </BentoGrid>
       </section>
-      <section id="skills">
+      <section id="skills" className="space-y-6">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade
             delay={BLUR_FADE_DELAY * 9}
@@ -135,6 +148,7 @@ export default function Page() {
             ))}
           </div>
         </div>
+        <GitHubCalendar username="227Faddi" />
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -142,7 +156,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  My Projects
+                  Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work

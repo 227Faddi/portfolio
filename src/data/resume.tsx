@@ -44,7 +44,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/#skills", icon: Code2, label: "Tech Stack" },
+    { href: "/#skills", icon: Code2, label: "Skills" },
     { href: "/#projects", icon: BriefcaseBusiness, label: "Work" },
     { href: "/#contact", icon: Contact, label: "Contact" },
   ],
@@ -56,28 +56,24 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/227Faddi",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/faliloukhouma/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       X: {
         name: "X",
         url: "https://x.com/khoumaDev",
         icon: Icons.x,
-
         navbar: true,
       },
       Email: {
         name: "Email",
         url: "mailto:falukhouma27@gmail.com",
         icon: Icons.email,
-
         navbar: true,
       },
       Call: {
@@ -128,7 +124,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Lead Flow",
+      title: "Lead Flow - AI Powered CRM",
       href: "https://app.leadflow.buzz",
       active: true,
       dates: "",
@@ -160,7 +156,7 @@ export const DATA = {
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
     {
-      title: "Fix Sleep",
+      title: "Fix Sleep - Mobile App",
       href: "https://app.leadflow.buzz",
       active: true,
       dates: "",
@@ -191,7 +187,7 @@ export const DATA = {
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
     {
-      title: "Istana Loft",
+      title: "Istana Loft - Airbnb Propriety Site",
       href: "https://www.istanaloft.com",
       active: true,
       dates: "",
