@@ -1,3 +1,4 @@
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { BorderBeam } from "./border-beam";
@@ -18,6 +19,7 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   description: string;
   href: string;
   cta: string;
+  modal?: boolean;
 }
 
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
@@ -42,6 +44,7 @@ const BentoCard = ({
   description,
   href,
   cta,
+  modal,
   ...props
 }: BentoCardProps) => (
   <div
@@ -70,12 +73,42 @@ const BentoCard = ({
         "pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
       )}
     >
-      <Button variant="ghost" asChild size="sm" className="pointer-events-auto">
-        <a href={href} target="_blank">
-          {cta}
-          <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-        </a>
-      </Button>
+      {modal ? (
+        <Dialog>
+          <Button
+            variant="ghost"
+            asChild
+            size="sm"
+            className="pointer-events-auto"
+          >
+            <DialogTrigger>
+              See more
+              <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+            </DialogTrigger>
+          </Button>
+          <DialogContent>
+            <div className="bg-black p-4 rounded-xl shadow-lg">
+              <iframe
+                src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/"
+                className="h-[800px] w-full rounded-lg"
+                title="Embedded post"
+              ></iframe>
+            </div>
+          </DialogContent>
+        </Dialog>
+      ) : (
+        <Button
+          variant="ghost"
+          asChild
+          size="sm"
+          className="pointer-events-auto"
+        >
+          <a href={href} target="_blank">
+            {cta}
+            <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+          </a>
+        </Button>
+      )}
     </div>
     <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
 

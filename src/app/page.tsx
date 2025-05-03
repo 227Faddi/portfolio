@@ -111,6 +111,7 @@ const features = [
     href: "https://www.linkedin.com/posts/faliloukhouma_confoo-softwareengineering-networking-activity-7303170251662200833-2dvl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEsWqmkB4kk1GeJW-XjUswuBVHfCkXxXJAs",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
+    modal: true,
     background: (
       <Image
         src={"/./confoo.jpg"}
