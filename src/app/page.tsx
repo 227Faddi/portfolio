@@ -1,19 +1,12 @@
 import { Featured } from "@/components/featured";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { BorderBeam } from "@/components/magicui/border-beam";
-import { Dock, DockIcon } from "@/components/magicui/dock";
+import { TweetCard } from "@/components/magicui/tweet-card";
 import { ProjectCard } from "@/components/project-card";
+import { Socials } from "@/components/socials";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import GitHubCalendar from "react-github-calendar";
 import Markdown from "react-markdown";
@@ -54,7 +47,7 @@ export default function Page() {
             About
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-            More about me
+            My Journey into Tech
           </h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
@@ -66,6 +59,10 @@ export default function Page() {
       <section id="bento">
         <Featured />
       </section>
+      <section className="flex flex-col items-center justify-center gap-6">
+        <TweetCard id="1875013280634405238" />
+        <GitHubCalendar username="227Faddi" />
+      </section>
       <section id="skills" className="space-y-6">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade
@@ -76,7 +73,7 @@ export default function Page() {
               Skills
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Tech Stack
+              Tech I Work With
             </h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
@@ -87,7 +84,6 @@ export default function Page() {
             ))}
           </div>
         </div>
-        <GitHubCalendar username="227Faddi" />
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -108,7 +104,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 max-w-[800px] mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -131,7 +127,7 @@ export default function Page() {
         </div>
       </section>
       <section id="contact" className="space-y-6">
-        <div className="grid items-center justify-center gap-6 px-4 text-center md:px-6 w-full">
+        <div className="grid items-center justify-center gap-8 px-4 text-center md:px-6 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
@@ -171,49 +167,10 @@ export default function Page() {
                 </Link>
                 .
               </p>
+              <Socials />
             </div>
           </BlurFade>
         </div>
-        <Dock className="pointer-events-auto relative mx-auto flex min-h-full h-full items-center px-4 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] transform-gpu dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
-          {Object.entries(DATA.contact.social)
-            .filter(([_, social]) => social.navbar)
-            .map(([name, social]) => (
-              <DockIcon key={name}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <Link
-                      href={social.url}
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      className={cn(
-                        buttonVariants({
-                          variant: "ghost",
-                          size: "icon",
-                        }),
-                        "size-14"
-                      )}
-                    >
-                      <social.icon className="size-5" />
-                    </Link>
-                  </TooltipTrigger>
-                  <TooltipContent side="bottom">
-                    <p>{social.name}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </DockIcon>
-            ))}
-          <BorderBeam
-            duration={6}
-            size={400}
-            className="from-transparent via-purple-500 to-transparent"
-          />
-          <BorderBeam
-            duration={6}
-            delay={3}
-            size={400}
-            className="from-transparent via-blue-500 to-transparent"
-          />
-        </Dock>
       </section>
     </main>
   );

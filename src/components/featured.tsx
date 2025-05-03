@@ -1,11 +1,39 @@
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "@/components/magicui/marquee";
-import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
 import { BellIcon, PartyPopper } from "lucide-react";
 import Image from "next/image";
 import { Icons } from "./icons";
+
+const StackCard = ({ icon, name }: { icon: any; name: string }) => {
+  return (
+    <div
+      className={cn(
+        "relative h-full w-full sm:w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
+        // light styles
+        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+        // dark styles
+        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+      )}
+    >
+      <div className="flex flex-row items-center justify-center gap-2">
+        {icon}
+        <p className="text-sm font-medium dark:text-white">{name}</p>
+      </div>
+    </div>
+  );
+};
+
+export const Featured = () => {
+  return (
+    <BentoGrid>
+      {features.map((feature, idx) => (
+        <BentoCard key={idx} {...feature} />
+      ))}
+    </BentoGrid>
+  );
+};
 
 const tech = [
   {
@@ -30,36 +58,23 @@ const tech = [
   },
 ];
 
-const StackCard = ({ icon, name }: { icon: any; name: string }) => {
-  return (
-    <figure
-      className={cn(
-        "relative h-full w-fit sm:w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
-        // light styles
-        "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-        // dark styles
-        "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-      )}
-    >
-      <div className="flex flex-row items-center gap-2">
-        {icon}
-        <p className="text-sm font-medium dark:text-white">{name}</p>
-      </div>
-    </figure>
-  );
-};
-
-export const Featured = () => {
-  return (
-    <BentoGrid>
-      {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
-      ))}
-    </BentoGrid>
-  );
-};
-
 const features = [
+  {
+    Icon: BellIcon,
+    name: "I Love Building Products",
+    description: "And being part of the tech community",
+    href: "#",
+    cta: "Learn more",
+    className: "col-span-3 lg:col-span-2",
+    background: (
+      <Image
+        src={"/./me.webp"}
+        alt={"sdf"}
+        fill
+        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+      />
+    ),
+  },
   {
     Icon: FileTextIcon,
     name: "Save your files",
@@ -79,20 +94,13 @@ const features = [
     ),
   },
   {
-    Icon: BellIcon,
-    name: "Coding is my Passion!",
-    description: "I Love Being part of the community",
-    href: "#",
-    cta: "Learn more",
-    className: "col-span-3 lg:col-span-2",
-    background: (
-      <Image
-        src={"/./me.webp"}
-        alt={"sdf"}
-        fill
-        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
-      />
-    ),
+    Icon: CalendarIcon,
+    name: "Let's chat!",
+    description: "I love to meet people let's have a coffee chat.",
+    className: "col-span-3 lg:col-span-1",
+    href: "#contact",
+    cta: "Book a Coffee Chat",
+    background: "",
   },
   {
     Icon: PartyPopper,
@@ -110,14 +118,5 @@ const features = [
         className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />
     ),
-  },
-  {
-    Icon: CalendarIcon,
-    name: "Let's chat!",
-    description: "I love to meet people let's have a coffee chat.",
-    className: "col-span-3 lg:col-span-1",
-    href: DATA.contact.social.Call.url,
-    cta: "Book a Coffee Chat",
-    background: "",
   },
 ];
