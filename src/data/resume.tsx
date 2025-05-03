@@ -13,10 +13,11 @@ export const DATA = {
   url: "https://faliloukhouma.com/",
   location: "Montrèal, QC",
   locationLink: "https://www.google.com/maps/place/montreal",
+  title: "Full Stack Developer",
   description:
-    "a Full Stack Developer. I build and manage websites and software to help businesses grow and achieve their goals.",
+    "I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
-    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value.",
+    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value. In my free time i like exploring music, try new things",
   avatarUrl: "./profile-photo.png",
   skills: [
     "JavaScript",
@@ -25,6 +26,7 @@ export const DATA = {
     "Python",
     "Next.js",
     "Node.js",
+    "Express",
     "Flask",
     "Tailwind CSS",
     "Bootstrap",
@@ -78,7 +80,7 @@ export const DATA = {
       },
       Call: {
         name: "Schedule a Chat",
-        url: "https://calendly.com/falukhouma27/30min",
+        url: "https://cal.com/falilou-khouma-2oywjv/30min",
         icon: Coffee,
         tooltip: "ssf",
         navbar: true,
@@ -176,11 +178,11 @@ export const DATA = {
     },
     {
       title: "Fix Sleep - Mobile App",
-      href: "https://app.leadflow.buzz",
+      href: "https://www.fixsleep.app",
       active: true,
       dates: "",
       description:
-        "A CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
+        "A Mobile app to help people sleep better by calculating sleep cycles.",
       technologies: [
         "TypeScript",
         "React Native",
@@ -192,21 +194,21 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://app.leadflow.buzz",
+          href: "https://www.fixsleep.app",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/227Faddi/leadflow",
+          href: "https://github.com/227Faddi/fixsleep",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
       video:
-        "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
+        "https://github-production-user-asset-6210df.s3.amazonaws.com/126704343/440139989-42266662-1822-417c-ae6f-398919396359.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250503%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250503T190145Z&X-Amz-Expires=300&X-Amz-Signature=eae643e127a2de0ea8c4bb265441c760107139052f48b9f4c1142ef72da7e4d4&X-Amz-SignedHeaders=host",
     },
     {
-      title: "Momentum",
+      title: "Momentum - Goal Setting Web App",
       href: "https://momentumgoal.netlify.app",
       active: true,
       dates: "",

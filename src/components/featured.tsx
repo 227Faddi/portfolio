@@ -1,8 +1,9 @@
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "@/components/magicui/marquee";
+import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
-import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
-import { BellIcon, PartyPopper } from "lucide-react";
+import { CalendarIcon } from "@radix-ui/react-icons";
+import { PartyPopper, PencilRuler } from "lucide-react";
 import Image from "next/image";
 import { Icons } from "./icons";
 
@@ -60,11 +61,12 @@ const tech = [
 
 const features = [
   {
-    Icon: BellIcon,
-    name: "I Love Building Products",
-    description: "And being part of the tech community",
-    href: "#",
-    cta: "Learn more",
+    Icon: PencilRuler,
+    name: "Solving Problems with Creativity",
+    description:
+      "I love using my creative side and tech skills to build solutions.",
+    href: "#projects",
+    cta: "See my work",
     className: "col-span-3 lg:col-span-2",
     background: (
       <Image
@@ -76,9 +78,9 @@ const features = [
     ),
   },
   {
-    Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    Icon: undefined,
+    name: "",
+    description: "",
     href: "#",
     className: "col-span-3 lg:col-span-1",
     background: (
@@ -96,16 +98,17 @@ const features = [
   {
     Icon: CalendarIcon,
     name: "Let's chat!",
-    description: "I love to meet people let's have a coffee chat.",
+    description: "I’m always open to meeting new people and exchanging ideas.",
     className: "col-span-3 lg:col-span-1",
-    href: "#contact",
+    href: DATA.contact.social.Call.url,
     cta: "Book a Coffee Chat",
     background: "",
   },
   {
     Icon: PartyPopper,
-    name: "Volunteering at Confoo.Ca",
-    description: "Supports 100+ integrations and counting.",
+    name: "Building Community Through Tech",
+    description:
+      "I actively take part in meetups and conferences to keep learning and connect with people who share the same passion.",
     href: "https://www.linkedin.com/posts/faliloukhouma_confoo-softwareengineering-networking-activity-7303170251662200833-2dvl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEsWqmkB4kk1GeJW-XjUswuBVHfCkXxXJAs",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",

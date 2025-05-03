@@ -5,6 +5,7 @@ import { BorderBeam } from "./border-beam";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode;
@@ -15,7 +16,7 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   name: string;
   className: string;
   background: ReactNode;
-  Icon: React.ElementType;
+  Icon?: React.ElementType;
   description: string;
   href: string;
   cta?: string;
@@ -61,7 +62,9 @@ const BentoCard = ({
   >
     <div>{background}</div>
     <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10">
-      <Icon className="h-12 w-12 origin-left transform-gpu dark:text-white transition-all duration-300 ease-in-out group-hover:scale-75" />
+      {Icon && (
+        <Icon className="h-12 w-12 origin-left transform-gpu dark:text-white transition-all duration-300 ease-in-out group-hover:scale-75" />
+      )}
       <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300">
         {name}
       </h3>
@@ -88,7 +91,7 @@ const BentoCard = ({
               </DialogTrigger>
             </Button>
             <DialogContent>
-              <div className="bg-black p-4 rounded-xl shadow-lg">
+              <div className="dark:bg-black p-4 rounded-xl">
                 <iframe
                   src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/"
                   className="h-[800px] w-full rounded-lg"
@@ -104,10 +107,14 @@ const BentoCard = ({
             size="sm"
             className="pointer-events-auto"
           >
-            <a href={href} target="_blank">
+            <Link
+              href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+            >
               {cta}
               <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-            </a>
+            </Link>
           </Button>
         ))}
     </div>
