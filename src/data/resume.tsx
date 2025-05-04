@@ -126,7 +126,7 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Lead Flow - AI Powered CRM",
+      title: "LeadFlow - AI Powered CRM",
       href: "https://app.leadflow.buzz",
       active: true,
       dates: "",
@@ -158,7 +158,7 @@ export const DATA = {
         "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
     {
-      title: "Istana Loft - Airbnb Propriety",
+      title: "Istana Loft - Rental Property Site",
       href: "https://www.istanaloft.com",
       active: true,
       dates: "",
@@ -177,12 +177,12 @@ export const DATA = {
         "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
     },
     {
-      title: "Fix Sleep - Mobile App",
+      title: "FixSleep - Sleep Cycle Planner",
       href: "https://www.fixsleep.app",
       active: true,
       dates: "",
       description:
-        "A Mobile app to help people sleep better by calculating sleep cycles.",
+        "A mobile app designed to improve sleep quality by calculating optimal sleep cycles. It features gentle sleep sounds, bedtime reminders, and smart wake-up suggestions.",
       technologies: [
         "TypeScript",
         "React Native",
@@ -204,11 +204,10 @@ export const DATA = {
         },
       ],
       image: "",
-      video:
-        "https://github.com/user-attachments/assets/42266662-1822-417c-ae6f-398919396359",
+      video: "/fixsleep.mp4",
     },
     {
-      title: "Momentum - Goal Setting Web App",
+      title: "Momentum - Goal Setting",
       href: "https://momentumgoal.netlify.app",
       active: true,
       dates: "",
