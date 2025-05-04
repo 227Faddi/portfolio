@@ -1,4 +1,3 @@
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { ComponentPropsWithoutRef, ReactNode } from "react";
 import { BorderBeam } from "./border-beam";
@@ -21,6 +20,7 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   href: string;
   cta?: string;
   modal?: boolean;
+  setIsOpen: any;
 }
 
 const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
@@ -46,6 +46,7 @@ const BentoCard = ({
   href,
   cta,
   modal,
+  setIsOpen,
   ...props
 }: BentoCardProps) => (
   <div
@@ -78,28 +79,17 @@ const BentoCard = ({
     >
       {cta &&
         (modal ? (
-          <Dialog>
-            <Button
-              variant="ghost"
-              asChild
-              size="sm"
-              className="pointer-events-auto"
-            >
-              <DialogTrigger>
-                {cta}
-                <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
-              </DialogTrigger>
-            </Button>
-            <DialogContent>
-              <div className="dark:bg-black p-4 rounded-xl">
-                <iframe
-                  src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/"
-                  className="h-[800px] w-full rounded-lg"
-                  title="Embedded post"
-                ></iframe>
-              </div>
-            </DialogContent>
-          </Dialog>
+          <Button
+            variant="ghost"
+            className="pointer-events-auto"
+            size="sm"
+            onClick={() => setIsOpen(true)}
+          >
+            <>
+              {cta}
+              <ArrowRightIcon className="ms-2 h-4 w-4 rtl:rotate-180" />
+            </>
+          </Button>
         ) : (
           <Button
             variant="ghost"

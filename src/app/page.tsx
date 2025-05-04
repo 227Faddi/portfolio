@@ -16,7 +16,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   return (
-    <main className="flex flex-col min-h-[100dvh] space-y-20">
+    <main className="flex flex-col min-h-[100dvh] space-y-24 2xl:space-y-32">
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8 pt-12 sm:pt-8 md:pt-4">
           <div className="gap-2 flex justify-between">
@@ -106,7 +106,7 @@ export default function Page() {
                   What I’ve Built
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  From simple websites to advanced web applications, here are
+                  From simple websites to complex web applications, here are
                   some of my favorite projects.
                 </p>
               </div>
@@ -155,7 +155,7 @@ export default function Page() {
                 >
                   Here
                 </Link>{" "}
-                or send me a direct message on{" "}
+                or send me a message on{" "}
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
@@ -164,14 +164,14 @@ export default function Page() {
                 >
                   LinkedIn
                 </Link>{" "}
-                or{" "}
+                or via{" "}
                 <Link
                   rel="noopener noreferrer"
                   target="_blank"
                   href={DATA.contact.social.X.url}
                   className="text-blue-500 hover:underline"
                 >
-                  X
+                  Email
                 </Link>
                 .
               </p>

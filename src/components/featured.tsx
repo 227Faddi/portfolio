@@ -1,3 +1,5 @@
+"use client";
+
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import { Marquee } from "@/components/magicui/marquee";
 import { DATA } from "@/data/resume";
@@ -5,7 +7,30 @@ import { cn } from "@/lib/utils";
 import { CalendarIcon } from "@radix-ui/react-icons";
 import { PartyPopper, PencilRuler } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 import { Icons } from "./icons";
+import HeroVideoDialog from "./magicui/hero-video-dialog";
+import { Calendar } from "./ui/calendar";
+
+export const Featured = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <BentoGrid>
+        {features.map((feature, idx) => (
+          <BentoCard key={idx} {...feature} setIsOpen={setIsOpen} />
+        ))}
+      </BentoGrid>
+      <HeroVideoDialog
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        className="pointer-events-auto"
+        animationStyle="from-center"
+      />
+    </>
+  );
+};
 
 const StackCard = ({ icon, name }: { icon: any; name: string }) => {
   return (
@@ -23,16 +48,6 @@ const StackCard = ({ icon, name }: { icon: any; name: string }) => {
         <p className="text-sm font-medium dark:text-white">{name}</p>
       </div>
     </div>
-  );
-};
-
-export const Featured = () => {
-  return (
-    <BentoGrid>
-      {features.map((feature, idx) => (
-        <BentoCard key={idx} {...feature} />
-      ))}
-    </BentoGrid>
   );
 };
 
@@ -111,7 +126,12 @@ const features = [
     className: "col-span-3 lg:col-span-1",
     href: DATA.contact.social.Call.url,
     cta: "Book a Coffee Chat",
-    background: "",
+    background: (
+      <Calendar
+        mode="single"
+        className="absolute right-0 top-10 origin-top scale-75 rounded-md border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-90"
+      />
+    ),
   },
   {
     Icon: PartyPopper,
@@ -124,7 +144,7 @@ const features = [
     modal: true,
     background: (
       <Image
-        src="/confoo.jpg"
+        src="/confoo.webp"
         alt={"volunteers group photo"}
         fill
         className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"

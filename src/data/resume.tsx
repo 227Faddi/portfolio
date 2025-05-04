@@ -17,8 +17,8 @@ export const DATA = {
   description:
     "I build and manage websites and software to help businesses grow and achieve their goals.",
   summary:
-    "After moving to Canada from Italy, I pursued my passion for technology and began building projects that brought ideas to life. This journey led me to specialize in web development, where I create intuitive, design-driven frontends with React and TypeScript and robust backends with Node.js. I’m dedicated to developing secure, scalable applications that empower businesses and deliver meaningful value. In my free time i like exploring music, try new things",
-  avatarUrl: "./profile-photo.png",
+    "I've always been curious about how things work and enjoy learning by doing, whether it’s solving problems or building something useful. After moving from Italy to Canada, I was pushed out of my comfort zone and learned how to adapt to new environments, cultures, and challenges. This journey led me to specialize in software development, where I use my skills to create impactful solutions.",
+  avatarUrl: "./profile-photo.webp",
   skills: [
     "JavaScript",
     "TypeScript",
@@ -204,7 +204,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/fixsleep.mp4",
+      video:
+        "https://github.com/user-attachments/assets/42266662-1822-417c-ae6f-398919396359",
     },
     {
       title: "Momentum - Goal Setting",
@@ -239,26 +240,4 @@ export const DATA = {
         "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
     },
   ],
-  // hackathons: [
-  //   {
-  //     title: "ConFoo",
-  //     dates: "November 23rd - 25th, 2018",
-  //     location: "Montréal, Québec",
-  //     description:
-  //       "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-  //     image: "https://confoo.ca/images/design/logo.png",
-  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-  //     links: [],
-  //   },
-  //   {
-  //     title: "ConFoo",
-  //     dates: "November 23rd - 25th, 2018",
-  //     location: "Montréal, Québec",
-  //     description:
-  //       "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
-  //     image: "https://confoo.ca/images/design/logo.png",
-  //     mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-  //     links: [],
-  //   },
-  // ],
 } as const;
