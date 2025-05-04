@@ -205,7 +205,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://github-production-user-asset-6210df.s3.amazonaws.com/126704343/440139989-42266662-1822-417c-ae6f-398919396359.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250503%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250503T190145Z&X-Amz-Expires=300&X-Amz-Signature=eae643e127a2de0ea8c4bb265441c760107139052f48b9f4c1142ef72da7e4d4&X-Amz-SignedHeaders=host",
+        "https://github.com/user-attachments/assets/42266662-1822-417c-ae6f-398919396359",
     },
     {
       title: "Momentum - Goal Setting Web App",

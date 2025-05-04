@@ -51,11 +51,11 @@ const tech = [
   },
   {
     name: "Node.js",
-    icon: Icons.nodejs({ className: "w-6 h-6" }),
+    icon: Icons.nodejs({ className: "w-5 h-5" }),
   },
   {
     name: "Python",
-    icon: Icons.python({ className: "w-2 h-2" }),
+    icon: Icons.python({ className: "w-5 h-5" }),
   },
 ];
 
@@ -70,7 +70,7 @@ const features = [
     className: "col-span-3 lg:col-span-2",
     background: (
       <Image
-        src={"/./me.webp"}
+        src="/me.webp"
         alt={"sdf"}
         fill
         className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
@@ -85,9 +85,18 @@ const features = [
     className: "col-span-3 lg:col-span-1",
     background: (
       <div className="relative flex h-[500px] w-full flex-row items-center justify-center overflow-hidden">
-        <Marquee pauseOnHover vertical className="[--duration:20s]">
-          {tech.map((review) => (
-            <StackCard key={review.name} {...review} />
+        <Marquee pauseOnHover vertical reverse className="[--duration:20s]">
+          {tech.map((review, index) => (
+            <StackCard key={index + 1} {...review} />
+          ))}
+        </Marquee>
+        <Marquee
+          pauseOnHover
+          vertical
+          className="[--duration:20s] hidden sm:flex  lg:hidden"
+        >
+          {tech.map((review, index) => (
+            <StackCard key={index + 2} {...review} />
           ))}
         </Marquee>
         <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 bg-gradient-to-b from-background"></div>
@@ -115,7 +124,7 @@ const features = [
     modal: true,
     background: (
       <Image
-        src={"/./confoo.jpg"}
+        src="/confoo.jpg"
         alt={"volunteers group photo"}
         fill
         className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"

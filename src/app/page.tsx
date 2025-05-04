@@ -175,10 +175,10 @@ export default function Page() {
                 </Link>
                 .
               </p>
-              <Socials />
             </div>
           </BlurFade>
         </div>
+        <Socials />
       </section>
     </main>
   );
