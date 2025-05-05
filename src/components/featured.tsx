@@ -87,6 +87,7 @@ const features = [
       <Image
         src="/me.webp"
         alt={"sdf"}
+        priority
         fill
         className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />

@@ -1,3 +1,4 @@
+import { ContactForm } from "@/components/contact-form";
 import { Featured } from "@/components/featured";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import BlurFade from "@/components/magicui/blur-fade";
@@ -134,7 +135,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="contact" className="space-y-6">
+      <section id="contact" className="space-y-8">
         <div className="grid items-center justify-center gap-8 px-4 text-center md:px-6 w-full">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
@@ -145,39 +146,30 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Looking to build a website/app, or up for a coffee chat? Feel
-                free to schedule a meeting{" "}
+                Looking to build a website or have a quick coffee chat? You can{" "}
                 <Link
                   href={DATA.contact.social.Call.url}
                   rel="noopener noreferrer"
                   target="_blank"
                   className="text-blue-500 hover:underline"
                 >
-                  Here
-                </Link>{" "}
-                or send me a message on{" "}
+                  schedule a meeting
+                </Link>
+                , reach out on{" "}
                 <Link
+                  href={DATA.contact.social.LinkedIn.url}
                   rel="noopener noreferrer"
                   target="_blank"
-                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
                   LinkedIn
-                </Link>{" "}
-                or via{" "}
-                <Link
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  Email
                 </Link>
-                .
+                , or simply send me a message using the form below.
               </p>
             </div>
           </BlurFade>
         </div>
+        <ContactForm />
         <Socials />
       </section>
     </main>
