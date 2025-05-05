@@ -6,7 +6,8 @@ import { Label } from "@radix-ui/react-label";
 import { Input } from "./ui/input";
 
 export const ContactForm = () => {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM as string);
+  const formId = process.env.NEXT_PUBLIC_FORM;
+  const [state, handleSubmit] = useForm(formId || "yourkey");
 
   return (
     <form
