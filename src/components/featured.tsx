@@ -85,6 +85,7 @@ const features = [
     className: "col-span-3 lg:col-span-2",
     background: (
       <Image
+        unoptimized
         src="/me.webp"
         alt={"image of falilou during an hackathon"}
         fill
@@ -144,6 +145,7 @@ const features = [
     modal: true,
     background: (
       <Image
+        unoptimized
         src="/confoo.webp"
         alt={"volunteers team at Confoo.Ca"}
         fill
