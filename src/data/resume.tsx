@@ -87,43 +87,6 @@ export const DATA = {
       },
     },
   },
-
-  work: [
-    {
-      company: "MTL Web Designs",
-      href: "",
-      badges: [],
-      location: "Montrèal, QC",
-      title: "Software Developer",
-      logoUrl: "./coding.webp",
-      start: "October 2024",
-      end: "Present",
-      description:
-        "Helped small businesses enhance their online presence by building websites tailored to their specific needs, enabling them to reach more clients and grow their customer base.",
-    },
-    {
-      company: "100Devs",
-      badges: [],
-      href: "https://100devs.org/",
-      location: "Remote",
-      title: "Full Stack Software Developer",
-      logoUrl: "./100devs.webp",
-      start: "October 2023",
-      end: "Present",
-      description:
-        "Designed and delivered multiple responsive web applications and websites, collaborating with a team of developers to implement best practices and tailor solutions to client needs, resulting in increased online engagement.",
-    },
-  ],
-  education: [
-    {
-      school: "I.T. Attilio Deffenu",
-      href: "https://www.deffenu.edu.it/",
-      degree: "Diploma in Administration, Finance, and Marketing",
-      logoUrl: "./deffenu.webp",
-      start: "2016",
-      end: "2021",
-    },
-  ],
   projects: [
     {
       title: "LeadFlow - AI Powered CRM",
@@ -146,11 +109,6 @@ export const DATA = {
           type: "Website",
           href: "https://app.leadflow.buzz",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/leadflow",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
@@ -197,18 +155,12 @@ export const DATA = {
           href: "https://www.fixsleep.app",
           icon: <Icons.globe className="size-3" />,
         },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/fixsleep",
-          icon: <Icons.github className="size-3" />,
-        },
       ],
       image: "",
-      video:
-        "https://github.com/user-attachments/assets/42266662-1822-417c-ae6f-398919396359",
+      video: "/fixsleep.mp4",
     },
     {
-      title: "Momentum - Goal Setting",
+      title: "Momentum - Goal Tracker",
       href: "https://momentumgoal.netlify.app",
       active: true,
       dates: "",
@@ -228,11 +180,6 @@ export const DATA = {
           type: "Website",
           href: "https://momentumgoal.netlify.app",
           icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/227Faddi/momentum",
-          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
