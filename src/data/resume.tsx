@@ -10,7 +10,7 @@ import {
 export const DATA = {
   name: "Falilou Khouma",
   initials: "FK",
-  url: "https://faliloukhouma.com/",
+  url: "https://faliloukhouma.com",
   location: "Montrèal, QC",
   locationLink: "https://www.google.com/maps/place/montreal",
   title: "Full Stack Developer",
@@ -28,6 +28,7 @@ export const DATA = {
     "Node.js",
     "Express",
     "Flask",
+    "REST API",
     "Tailwind CSS",
     "Bootstrap",
     "Redux",
@@ -68,7 +69,7 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://x.com/khoumaDev",
+        url: "https://x.com/intent/follow?screen_name=khoumadev",
         icon: Icons.x,
         navbar: true,
       },
