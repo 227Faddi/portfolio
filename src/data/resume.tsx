@@ -52,7 +52,7 @@ export const DATA = {
     { href: "/#contact", icon: Contact, label: "Contact" },
   ],
   contact: {
-    email: "falukhouma27@gmail.com",
+    email: "contact@faliloukhouma.com",
     tel: "+15149621927",
     social: {
       GitHub: {
@@ -75,7 +75,7 @@ export const DATA = {
       },
       Email: {
         name: "Email",
-        url: "mailto:falukhouma27@gmail.com",
+        url: "mailto:contact@faliloukhouma.com",
         icon: Icons.email,
         navbar: true,
       },
