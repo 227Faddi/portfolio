@@ -141,51 +141,51 @@ export const DATA = {
       image: "",
       video: "/fixsleep.mp4",
     },
-    {
-      title: "Istana Loft - Rental Property",
-      href: "https://www.istanaloft.com",
-      active: true,
-      dates: "",
-      description:
-        "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
-      technologies: ["TypeScript", "React", "Next.js", "Tailwind CSS", "CI/CD"],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.istanaloft.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
-    },
-    {
-      title: "Momentum - Goal Tracker",
-      href: "https://momentumgoal.netlify.app",
-      active: true,
-      dates: "",
-      description:
-        "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
-      technologies: [
-        "TypeScript",
-        "React",
-        "Tailwind CSS",
-        "Node.js",
-        "MongoDB",
-        "Redux",
-        "CI/CD",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://momentumgoal.netlify.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
-    },
+    // {
+    //   title: "Istana Loft - Rental Property",
+    //   href: "https://www.istanaloft.com",
+    //   active: true,
+    //   dates: "",
+    //   description:
+    //     "A multilingual website designed for an Airbnb property in Italy, featuring a sleek design, smooth navigation, and a contact form for seamless guest inquiries.",
+    //   technologies: ["TypeScript", "React", "Next.js", "Tailwind CSS", "CI/CD"],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://www.istanaloft.com",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "https://github.com/user-attachments/assets/6a756f16-8a91-457e-955b-06e6227c7e43",
+    // },
+    // {
+    //   title: "Momentum - Goal Tracker",
+    //   href: "https://momentumgoal.netlify.app",
+    //   active: true,
+    //   dates: "",
+    //   description:
+    //     "A goal-tracking platform that helps users set and achieve their goals. Users can categorize their goals, earn points for completing them, and compete with others on the leaderboard.",
+    //   technologies: [
+    //     "TypeScript",
+    //     "React",
+    //     "Tailwind CSS",
+    //     "Node.js",
+    //     "MongoDB",
+    //     "Redux",
+    //     "CI/CD",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Website",
+    //       href: "https://momentumgoal.netlify.app",
+    //       icon: <Icons.globe className="size-3" />,
+    //     },
+    //   ],
+    //   image: "",
+    //   video:
+    //     "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
+    // },
   ],
 } as const;
