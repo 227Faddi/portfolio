@@ -100,10 +100,10 @@ export const DATA = {
         "TypeScript",
         "React",
         "Tailwind CSS",
-        "MySQL",
+        "PostgreSQL",
         "Node.js",
-        "CI/CD",
         "TanStack Query",
+        "CI/CD",
       ],
       links: [
         {
@@ -130,6 +130,7 @@ export const DATA = {
         "NativeWind",
         "Next.js",
         "Tailwind CSS",
+        "CI/CD",
       ],
       links: [
         {
