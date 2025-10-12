@@ -69,7 +69,7 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://x.com/intent/follow?screen_name=khoumadev",
+        url: "https://x.com/intent/follow?screen_name=asyncfaddi",
         icon: Icons.x,
         navbar: true,
       },
