@@ -1,10 +1,10 @@
 import { ContactForm } from "@/components/contact-form";
 import { Featured } from "@/components/featured";
 import GithubCalendar from "@/components/GithubCalendar";
-import { AuroraText } from "@/components/magicui/aurora-text";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { TweetCard } from "@/components/magicui/tweet-card";
+import { MyAuroraText } from "@/components/MyAuroraText";
 import { ProjectCard } from "@/components/project-card";
 import { Socials } from "@/components/socials";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -29,12 +29,9 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFade delay={BLUR_FADE_DELAY}>
-                <AuroraText
-                  colors={["#93c5fd", "#3b82f6"]}
-                  className="md:text-xl font-bold"
-                >
+                <MyAuroraText className="md:text-xl font-bold">
                   {DATA.title}
-                </AuroraText>
+                </MyAuroraText>
               </BlurFade>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"

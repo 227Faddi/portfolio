@@ -142,7 +142,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://app.leadflow.buzz",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.globe />,
         },
       ],
       image: "",
@@ -169,7 +169,7 @@ export const DATA = {
         {
           type: "Website",
           href: "https://www.fixsleep.app",
-          icon: <Icons.globe className="size-3" />,
+          icon: <Icons.globe />,
         },
       ],
       image: "",

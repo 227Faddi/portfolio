@@ -1,5 +1,5 @@
-import { AuroraText } from "@/components/magicui/aurora-text";
 import BlurFade from "@/components/magicui/blur-fade";
+import { MyAuroraText } from "@/components/MyAuroraText";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -17,7 +17,7 @@ export default function LinksPage() {
       <BlurFade delay={BLUR_FADE_DELAY}>
         <div className="flex flex-col items-center gap-2 mb-10">
           <h1 className="font-bold text-3xl sm:text-5xl">
-            <AuroraText colors={["#93c5fd", "#3b82f6"]}>Links</AuroraText>
+            <MyAuroraText>Links</MyAuroraText>
           </h1>
           <p className="text-muted-foreground text-center">
             Where you can find me
