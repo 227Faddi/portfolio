@@ -12,7 +12,7 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-6 max-w-md mx-auto p-6 border rounded-2xl shadow-sm"
+      className="space-y-6 max-w-md mx-auto p-6 border rounded-3xl shadow-sm"
     >
       <div className="space-y-2">
         <Label htmlFor="name">Name</Label>

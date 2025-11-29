@@ -4,10 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import mymetadata from "@/data/metadata";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
+import { Lexend } from "next/font/google";
 import "./globals.css";
 
-const fontSans = FontSans({
+const fontSans = Lexend({
   subsets: ["latin"],
   variable: "--font-sans",
 });

@@ -36,7 +36,7 @@ const StackCard = ({ icon, name }: { icon: any; name: string }) => {
   return (
     <div
       className={cn(
-        "relative h-full w-full sm:w-36 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative h-full w-full sm:w-36 cursor-pointer overflow-hidden rounded-2xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
@@ -89,7 +89,7 @@ const features = [
         src="/me.webp"
         alt={"image of falilou during an hackathon"}
         fill
-        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+        className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />
     ),
   },
@@ -149,7 +149,7 @@ const features = [
         src="/confoo.webp"
         alt={"volunteers team at Confoo.Ca"}
         fill
-        className="rounded-xl object-cover absolute right-2 top-4 h-[300px] w-full scale-75 border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+        className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />
     ),
   },

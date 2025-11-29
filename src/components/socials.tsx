@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export const Socials = () => {
   return (
-    <Dock>
+    <Dock className="px-6 gap-2 rounded-[32px]">
       {Object.entries(DATA.contact.social)
         .filter(([_, social]) => social.navbar)
         .map(([name, social]) => (

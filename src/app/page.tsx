@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/contact-form";
 import { Featured } from "@/components/featured";
+import GithubCalendar from "@/components/GithubCalendar";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -10,7 +11,6 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
-import GitHubCalendar from "react-github-calendar";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -30,7 +30,7 @@ export default function Page() {
               />
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <AuroraText
-                  colors={["#a855f7", "#3b82f6"]}
+                  colors={["#93c5fd", "#3b82f6"]}
                   className="md:text-xl font-bold"
                 >
                   {DATA.title}
@@ -69,9 +69,9 @@ export default function Page() {
       <section id="bento">
         <Featured />
       </section>
-      <section className="flex flex-col items-center justify-center gap-6">
-        <TweetCard id="1875013280634405238" />
-        <GitHubCalendar username="227Faddi" />
+      <section className="flex flex-col items-center justify-center gap-16">
+        <TweetCard className="rounded-3xl" id="1875013280634405238" />
+        <GithubCalendar />
       </section>
       <section id="skills" className="space-y-6">
         <div className="flex min-h-0 flex-col gap-y-3">
