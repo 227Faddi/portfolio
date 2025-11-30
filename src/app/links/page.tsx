@@ -1,5 +1,6 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { MyAuroraText } from "@/components/MyAuroraText";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -16,9 +17,15 @@ export default function LinksPage() {
     <section className="flex flex-col items-center justify-center py-12">
       <BlurFade delay={BLUR_FADE_DELAY}>
         <div className="flex flex-col items-center gap-2 mb-10">
+          <div className="flex flex-col items-center gap-2">
+          <Avatar className="size-20 border">
+            <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+            <AvatarFallback>{DATA.initials}</AvatarFallback>
+          </Avatar>
           <h1 className="font-bold text-3xl sm:text-5xl">
-            <MyAuroraText>Links</MyAuroraText>
+            <MyAuroraText>Falilou</MyAuroraText>
           </h1>
+          </div>
           <p className="text-muted-foreground text-center">
             Where you can find me
           </p>
@@ -37,7 +44,7 @@ export default function LinksPage() {
             >
               <Link
                 href={social.url}
-                target="_blank"
+                target={social.name === "Portfolio" ? "_self" : "_blank"}
                 rel="noopener noreferrer"
                 className={cn(
                   "group flex items-center justify-between w-full p-4 rounded-3xl border border-input bg-background px-6 hover:bg-accent hover:text-accent-foreground transition-all duration-300 shadow-sm hover:shadow-md hover:-translate-y-0.5"

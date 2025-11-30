@@ -4,7 +4,7 @@ import {
   Code2,
   Coffee,
   Contact,
-  HomeIcon,
+  HomeIcon
 } from "lucide-react";
 
 export const DATA = {
@@ -50,6 +50,7 @@ export const DATA = {
     { href: "/#skills", icon: Code2, label: "Skills" },
     { href: "/#projects", icon: BriefcaseBusiness, label: "Work" },
     { href: "/#contact", icon: Contact, label: "Contact" },
+    // { href: "/links", icon: Link, label: "Links" },
   ],
   contact: {
     email: "contact@faliloukhouma.com",
@@ -61,7 +62,7 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
         showInLinks: true,
-        order: 6,
+        order: 7,
       },
       LinkedIn: {
         name: "LinkedIn",
@@ -69,7 +70,7 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
         showInLinks: true,
-        order: 5,
+        order: 6,
       },
       X: {
         name: "X/Twitter",
@@ -77,7 +78,7 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
         showInLinks: true,
-        order: 4,
+        order: 2,
       },
       Email: {
         name: "Email",
@@ -85,7 +86,7 @@ export const DATA = {
         icon: Icons.email,
         navbar: true,
         showInLinks: true,
-        order: 7,
+        order: 8,
       },
       Call: {
         name: "Schedule a Chat",
@@ -93,7 +94,7 @@ export const DATA = {
         icon: Coffee,
         navbar: true,
         showInLinks: false,
-        order: 8,
+        order: 9,
       },
       YouTube: {
         name: "YouTube",
@@ -101,7 +102,7 @@ export const DATA = {
         icon: Icons.youtube,
         navbar: false,
         showInLinks: true,
-        order: 1,
+        order: 5,
       },
       Instagram: {
         name: "Instagram",
@@ -109,7 +110,7 @@ export const DATA = {
         icon: Icons.instagram,
         navbar: false,
         showInLinks: true,
-        order: 2,
+        order: 3,
       },
       TikTok: {
         name: "TikTok",
@@ -117,7 +118,15 @@ export const DATA = {
         icon: Icons.tiktok,
         navbar: false,
         showInLinks: true,
-        order: 3,
+        order: 4,
+      },
+      Portfolio: {
+        name: "Portfolio",
+        url: "/",
+        icon: Icons.portfolio,
+        navbar: false,
+        showInLinks: true,
+        order: 1,
       },
     },
   },
