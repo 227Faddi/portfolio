@@ -4,7 +4,7 @@ import {
   Code2,
   Coffee,
   Contact,
-  HomeIcon
+  HomeIcon,
 } from "lucide-react";
 
 export const DATA = {
@@ -43,6 +43,7 @@ export const DATA = {
     "GitHub",
     "GitHub Actions",
     "Vercel",
+    "Supabase",
     "Netlify",
   ],
   navbar: [
@@ -171,6 +172,7 @@ export const DATA = {
         "Expo",
         "NativeWind",
         "Next.js",
+        "Supabase",
         "Tailwind CSS",
         "CI/CD",
       ],
