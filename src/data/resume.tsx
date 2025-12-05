@@ -133,33 +133,6 @@ export const DATA = {
   },
   projects: [
     {
-      title: "LeadFlow - AI Powered CRM",
-      href: "https://app.leadflow.buzz",
-      active: true,
-      dates: "",
-      description:
-        "A CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
-      technologies: [
-        "TypeScript",
-        "React",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Node.js",
-        "TanStack Query",
-        "CI/CD",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://app.leadflow.buzz",
-          icon: <Icons.globe />,
-        },
-      ],
-      image: "",
-      video:
-        "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
-    },
-    {
       title: "FixSleep - Sleep Cycle Alarm",
       href: "https://www.fixsleep.app",
       active: true,
@@ -185,6 +158,33 @@ export const DATA = {
       ],
       image: "",
       video: "/fixsleep.mp4",
+    },
+    {
+      title: "LeadFlow - AI Powered CRM",
+      href: "https://app.leadflow.buzz",
+      active: true,
+      dates: "",
+      description:
+        "A CRM platform designed specifically for freelancers to organize leads, track their progress, and make data-driven decisions through comprehensive analytics with the assistance of AI.",
+      technologies: [
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "PostgreSQL",
+        "Node.js",
+        "TanStack Query",
+        "CI/CD",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://app.leadflow.buzz",
+          icon: <Icons.globe />,
+        },
+      ],
+      image: "",
+      video:
+        "https://github.com/user-attachments/assets/b2db95df-9e15-45f8-93fd-a1dd8bcb2121",
     },
     // {
     //   title: "Istana Loft - Rental Property",
