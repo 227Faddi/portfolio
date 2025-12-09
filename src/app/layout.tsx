@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import mymetadata from "@/data/metadata";
 import { cn } from "@/lib/utils";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
@@ -38,6 +39,7 @@ export default function RootLayout({
           </TooltipProvider>
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-G57Q493YC0" />
     </html>
   );
 }
