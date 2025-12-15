@@ -138,7 +138,7 @@ export const DATA = {
       active: true,
       dates: "",
       description:
-        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 1,000+ downloads across iOS & Android.",
+        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 2,000+ downloads across iOS & Android.",
       technologies: [
         "TypeScript",
         "React Native",

@@ -66,10 +66,6 @@ export default function Page() {
       <section id="bento">
         <Featured />
       </section>
-      <section className="flex flex-col items-center justify-center gap-16">
-        <TweetCard className="rounded-3xl" id="1875013280634405238" />
-        <GithubCalendar />
-      </section>
       <section id="skills" className="space-y-6">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade
@@ -91,6 +87,10 @@ export default function Page() {
             ))}
           </div>
         </div>
+      </section>
+      <section className="flex flex-col items-center justify-center gap-16">
+        <GithubCalendar />
+        <TweetCard className="rounded-3xl" id="1875013280634405238" />
       </section>
       <section id="projects">
         <div className="space-y-12 w-full py-12">
