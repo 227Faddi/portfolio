@@ -39,6 +39,7 @@ export const DATA = {
     "MongoDB",
     "PostgreSQL",
     "CI/CD",
+    "Unit Tests",
     "Git",
     "GitHub",
     "GitHub Actions",
