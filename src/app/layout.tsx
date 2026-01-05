@@ -36,6 +36,11 @@ export default function RootLayout({
           <TooltipProvider delayDuration={0}>
             <Navbar />
             {children}
+            <footer className="mt-24 pb-8 text-center text-sm text-muted-foreground">
+              <p>
+                © {new Date().getFullYear()} Falilou Khouma. All Rights Reserved.
+              </p>
+            </footer>
           </TooltipProvider>
         </ThemeProvider>
       </body>
