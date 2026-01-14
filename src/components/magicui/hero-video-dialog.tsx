@@ -18,9 +18,12 @@ type AnimationStyle =
 
 interface HeroVideoProps {
   animationStyle?: AnimationStyle;
-  isOpen: any;
-  setIsOpen: any;
+  isOpen: boolean;
+  setIsOpen: (value: boolean | ((prev: boolean) => boolean)) => void;
   className?: string;
+  url?: string;
+  title?: string;
+  height?: string;
 }
 
 const animationVariants = {
@@ -71,6 +74,9 @@ export default function HeroVideoDialog({
   isOpen,
   setIsOpen,
   className,
+  url = "https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/",
+  title = "LinkedIn post",
+  height = "600px",
 }: HeroVideoProps) {
   const selectedAnimation = animationVariants[animationStyle];
 
@@ -99,17 +105,18 @@ export default function HeroVideoDialog({
             >
               <motion.button
                 onClick={() => setIsOpen(false)}
-                className="absolute top-2 right-2 rounded-full p-2 text-xl backdrop-blur-md bg-neutral-100/50 text-white"
+                className="absolute top-2 right-2 z-10 rounded-full p-2 text-xl backdrop-blur-md bg-neutral-100/50 text-white hover:bg-neutral-200/50"
               >
                 <XIcon className="size-5" />
               </motion.button>
 
               <div className="rounded-2xl overflow-hidden">
                 <iframe
-                  src="https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/"
-                  className="w-full h-[600px] 2xl:[900px] rounded-2xl"
+                  src={url}
+                  className="w-full rounded-2xl"
+                  style={{ height }}
                   allowFullScreen
-                  title="LinkedIn post"
+                  title={title}
                 ></iframe>
               </div>
             </motion.div>

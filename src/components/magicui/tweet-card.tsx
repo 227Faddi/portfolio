@@ -216,11 +216,13 @@ export const MagicTweet = ({
   tweet,
   components,
   className,
+  hideMedia = false,
   ...props
 }: {
   tweet: Tweet;
   components?: TwitterComponents;
   className?: string;
+  hideMedia?: boolean;
 }) => {
   const enrichedTweet = enrichTweet(tweet);
   return (
@@ -233,7 +235,7 @@ export const MagicTweet = ({
     >
       <TweetHeader tweet={enrichedTweet} />
       <TweetBody tweet={enrichedTweet} />
-      <TweetMedia tweet={enrichedTweet} />
+      {!hideMedia && <TweetMedia tweet={enrichedTweet} />}
     </div>
   );
 };
@@ -246,9 +248,11 @@ export const TweetCard = async ({
   components,
   fallback = <TweetSkeleton />,
   onError,
+  hideMedia = false,
   ...props
 }: TweetProps & {
   className?: string;
+  hideMedia?: boolean;
 }) => {
   const tweet = id
     ? await getTweet(id).catch((err) => {
@@ -267,7 +271,7 @@ export const TweetCard = async ({
 
   return (
     <Suspense fallback={fallback}>
-      <MagicTweet tweet={tweet} {...props} />
+      <MagicTweet tweet={tweet} hideMedia={hideMedia} {...props} />
     </Suspense>
   );
 };

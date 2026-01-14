@@ -9,6 +9,7 @@ import Link from "next/link";
 interface BentoGridProps extends ComponentPropsWithoutRef<"div"> {
   children: ReactNode;
   className?: string;
+  cols?: 2 | 3;
 }
 
 interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
@@ -20,14 +21,24 @@ interface BentoCardProps extends ComponentPropsWithoutRef<"div"> {
   href: string;
   cta?: string;
   modal?: boolean;
-  setIsOpen: any;
+  setIsOpen?: any;
+  modalUrl?: string;
+  modalTitle?: string;
+  modalHeight?: string;
+  columns?: number;
 }
 
-const BentoGrid = ({ children, className, ...props }: BentoGridProps) => {
+const BentoGrid = ({
+  children,
+  className,
+  cols = 3,
+  ...props
+}: BentoGridProps) => {
   return (
     <div
       className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
+        "grid w-full auto-rows-[22rem] gap-4",
+        cols === 2 ? "grid-cols-2" : "grid-cols-3",
         className
       )}
       {...props}
@@ -47,6 +58,9 @@ const BentoCard = ({
   cta,
   modal,
   setIsOpen,
+  modalUrl,
+  modalTitle,
+  modalHeight,
   ...props
 }: BentoCardProps) => (
   <div
@@ -78,12 +92,19 @@ const BentoCard = ({
       )}
     >
       {cta &&
-        (modal ? (
+        (modal && setIsOpen ? (
           <Button
             variant="ghost"
             className="pointer-events-auto"
             size="sm"
-            onClick={() => setIsOpen(true)}
+            onClick={() =>
+              setIsOpen({
+                isOpen: true,
+                url: modalUrl,
+                title: modalTitle,
+                height: modalHeight,
+              })
+            }
           >
             <>
               {cta}

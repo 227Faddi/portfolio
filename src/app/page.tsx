@@ -1,5 +1,5 @@
 import { ContactForm } from "@/components/contact-form";
-import { Featured } from "@/components/featured";
+import { Featured, communityFeatures } from "@/components/featured";
 import GithubCalendar from "@/components/GithubCalendar";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -48,7 +48,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="about" className="space-y-3">
+      <section id="about" className="space-y-8">
         <BlurFade delay={BLUR_FADE_DELAY * 3} className="text-center space-y-3">
           <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
             About
@@ -63,11 +63,12 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      <section id="bento">
+      <section id="bento" className="space-y-8 flex flex-col items-center">
         <Featured />
+        <TweetCard className="rounded-3xl" id="1979970338315223064" hideMedia />
       </section>
       <section id="skills" className="space-y-6">
-        <div className="flex min-h-0 flex-col gap-y-3">
+        <div className="flex min-h-0 flex-col gap-y-8">
           <BlurFade
             delay={BLUR_FADE_DELAY * 9}
             className="text-center space-y-3"
@@ -78,6 +79,10 @@ export default function Page() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               Tech I Work With
             </h2>
+            <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              From frontend to backend, these are the tools and technologies I
+              use to build modern, scalable applications.
+            </p>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
@@ -93,7 +98,7 @@ export default function Page() {
         <TweetCard className="rounded-3xl" id="1875013280634405238" />
       </section>
       <section id="projects">
-        <div className="space-y-12 w-full py-12">
+        <div className="space-y-8 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -130,6 +135,26 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="community" className="space-y-8">
+        <BlurFade
+          delay={BLUR_FADE_DELAY * 13}
+          className="text-center space-y-3"
+        >
+          <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+            Community
+          </div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            Beyond the Code
+          </h2>
+          <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-2xl mx-auto">
+            I grow by pushing myself outside my comfort zone. I stay active in
+            the community to connect, learn, and contribute.
+          </p>
+        </BlurFade>
+        <div>
+          <Featured features={communityFeatures} cols={2} />
         </div>
       </section>
       <section id="contact" className="space-y-8">
