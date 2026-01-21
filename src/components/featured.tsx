@@ -264,12 +264,12 @@ export const communityFeatures: FeatureItem[] = [
     name: "Speaking at Shopify",
     description:
       "Turning personal lessons into resources others can learn from.",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7417658201111695360/",
+    href: "https://www.linkedin.com/feed/update/urn:li:activity:7419842128199180288/",
     cta: "Learn more",
     className: "col-span-2 lg:col-span-1",
     modal: true,
     modalUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7417658201111695360",
+      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7419842128199180288",
     modalTitle: "LinkedIn post",
     modalHeight: "600px",
     background: (
