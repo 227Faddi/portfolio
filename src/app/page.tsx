@@ -51,10 +51,10 @@ export default function Page() {
       <section id="about" className="space-y-8">
         <BlurFade delay={BLUR_FADE_DELAY * 3} className="text-center space-y-3">
           <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-            About
+            {DATA.sections.about.name}
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-            My Journey into Tech
+            {DATA.sections.about.title}
           </h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
@@ -74,14 +74,13 @@ export default function Page() {
             className="text-center space-y-3"
           >
             <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              Skills
+              {DATA.sections.skills.name}
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Tech I Work With
+              {DATA.sections.skills.title}
             </h2>
             <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              From frontend to backend, these are the tools and technologies I
-              use to build modern, scalable applications.
+              {DATA.sections.skills.description}
             </p>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
@@ -103,14 +102,13 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Projects
+                  {DATA.sections.projects.name}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  What I’ve Built
+                  {DATA.sections.projects.title}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  From simple websites to complex web applications, here are
-                  some of my favorite projects.
+                  {DATA.sections.projects.description}
                 </p>
               </div>
             </div>
@@ -143,14 +141,13 @@ export default function Page() {
           className="text-center space-y-3"
         >
           <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-            Community
+            {DATA.sections.community.name}
           </div>
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-            Beyond the Code
+            {DATA.sections.community.title}
           </h2>
           <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-2xl mx-auto">
-            I grow by pushing myself outside my comfort zone. I stay active in
-            the community to connect, learn, and contribute.
+            {DATA.sections.community.description}
           </p>
         </BlurFade>
         <div>
@@ -162,10 +159,10 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Contact
+                {DATA.sections.contact.name}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
+                {DATA.sections.contact.title}
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Looking to build a website or have a quick coffee chat? You can{" "}

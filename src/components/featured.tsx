@@ -195,17 +195,16 @@ export const defaultTech: TechItem[] = [
 export const defaultFeatures: FeatureItem[] = [
   {
     Icon: PencilRuler,
-    name: "Solving Problems with Creativity",
-    description:
-      "I love using my creative side and tech skills to build solutions.",
-    href: "#projects",
-    cta: "See my work",
+    name: DATA.features.solving.name,
+    description: DATA.features.solving.description,
+    href: DATA.features.solving.href,
+    cta: DATA.features.solving.cta,
     className: "col-span-3 lg:col-span-2",
     background: (
       <Image
         unoptimized
-        src="/me.webp"
-        alt={"Falilou during an hackathon"}
+        src={DATA.features.solving.image}
+        alt={DATA.features.solving.name}
         fill
         className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />
@@ -221,11 +220,11 @@ export const defaultFeatures: FeatureItem[] = [
   },
   {
     Icon: CalendarIcon,
-    name: "Let's chat!",
-    description: "I’m always open to meeting new people and exchanging ideas.",
+    name: DATA.features.chat.name,
+    description: DATA.features.chat.description,
     className: "col-span-3 lg:col-span-1",
-    href: DATA.contact.social.Call.url,
-    cta: "Book a Coffee Chat",
+    href: DATA.features.chat.href,
+    cta: DATA.features.chat.cta,
     background: (
       <Calendar
         mode="single"
@@ -235,22 +234,20 @@ export const defaultFeatures: FeatureItem[] = [
   },
   {
     Icon: PartyPopper,
-    name: "Building Community Through Tech",
-    description:
-      "I actively take part in meetups and conferences to keep learning and connect with people who share the same passion.",
-    href: "#community",
-    cta: "Learn more",
+    name: DATA.features.community.name,
+    description: DATA.features.community.description,
+    href: DATA.features.community.href,
+    cta: DATA.features.community.cta,
     className: "col-span-3 lg:col-span-2",
     modal: false,
-    modalUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/",
-    modalTitle: "LinkedIn post",
+    modalUrl: DATA.features.community.modal.url,
+    modalTitle: DATA.features.community.modal.title,
     modalHeight: "600px",
     background: (
       <Image
         unoptimized
-        src="/builders.webp"
-        alt={"Shopify Builders Sunday"}
+        src={DATA.features.community.image}
+        alt={DATA.features.community.name}
         fill
         className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
       />
@@ -258,50 +255,24 @@ export const defaultFeatures: FeatureItem[] = [
   },
 ];
 
-export const communityFeatures: FeatureItem[] = [
-  {
-    Icon: MicVocal,
-    name: "Speaking at Shopify",
-    description:
-      "Turning personal lessons into resources others can learn from.",
-    href: "https://www.linkedin.com/feed/update/urn:li:activity:7419842128199180288/",
-    cta: "Learn more",
-    className: "col-span-2 lg:col-span-1",
-    modal: true,
-    modalUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7419842128199180288",
-    modalTitle: "LinkedIn post",
-    modalHeight: "600px",
-    background: (
-      <Image
-        unoptimized
-        src="/talk.webp"
-        alt={"Falilou presenting at Shopify"}
-        fill
-        className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
-      />
-    ),
-  },
-  {
-    Icon: Users,
-    name: "Volunteering at Confoo",
-    description: "Helping build the events that bring the community together.",
-    href: "https://www.linkedin.com/posts/faliloukhouma_confoo-softwareengineering-networking-activity-7303170251662200833-2dvl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEsWqmkB4kk1GeJW-XjUswuBVHfCkXxXJAs",
-    cta: "Learn more",
-    className: "col-span-2 lg:col-span-1",
-    modal: true,
-    modalUrl:
-      "https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/",
-    modalTitle: "LinkedIn post",
-    modalHeight: "600px",
-    background: (
-      <Image
-        unoptimized
-        src="/confoo.webp"
-        alt={"volunteers team at Confoo.Ca"}
-        fill
-        className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
-      />
-    ),
-  },
-];
+export const communityFeatures: FeatureItem[] = DATA.community.map((item) => ({
+  Icon: item.name.includes("Shopify") ? MicVocal : Users, // Dynamic icon logic based on name or another property if needed
+  name: item.name,
+  description: item.description,
+  href: item.href,
+  cta: item.cta,
+  className: "col-span-2 lg:col-span-1",
+  modal: true,
+  modalUrl: item.modal.url,
+  modalTitle: item.modal.title,
+  modalHeight: "600px",
+  background: (
+    <Image
+      unoptimized
+      src={item.image}
+      alt={item.name}
+      fill
+      className="rounded-3xl object-cover absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-90"
+    />
+  ),
+}));

@@ -5,6 +5,8 @@ import { useForm, ValidationError } from "@formspree/react";
 import { Label } from "@radix-ui/react-label";
 import { Input } from "./ui/input";
 
+import { DATA } from "@/data/resume";
+
 export const ContactForm = () => {
   const formId = process.env.NEXT_PUBLIC_FORM;
   const [state, handleSubmit] = useForm(formId || "yourkey");
@@ -15,12 +17,12 @@ export const ContactForm = () => {
       className="space-y-6 max-w-md mx-auto p-6 border rounded-3xl shadow-sm"
     >
       <div className="space-y-2">
-        <Label htmlFor="name">Name</Label>
+        <Label htmlFor="name">{DATA.other.contactForm.name.label}</Label>
         <Input
           id="name"
           type="text"
           name="name"
-          placeholder="Your name"
+          placeholder={DATA.other.contactForm.name.placeholder}
           required
         />
         <ValidationError
@@ -31,12 +33,12 @@ export const ContactForm = () => {
         />
       </div>
       <div className="space-y-2">
-        <Label htmlFor="email">Email</Label>
+        <Label htmlFor="email">{DATA.other.contactForm.email.label}</Label>
         <Input
           id="email"
           type="email"
           name="email"
-          placeholder="you@example.com"
+          placeholder={DATA.other.contactForm.email.placeholder}
           required
         />
         <ValidationError
@@ -47,11 +49,11 @@ export const ContactForm = () => {
         />
       </div>
       <div className="space-y-2">
-        <Label htmlFor="message">Message</Label>
+        <Label htmlFor="message">{DATA.other.contactForm.message.label}</Label>
         <Textarea
           id="message"
           name="message"
-          placeholder="Your message..."
+          placeholder={DATA.other.contactForm.message.placeholder}
           rows={4}
           required
         />
@@ -64,8 +66,10 @@ export const ContactForm = () => {
       </div>
       {state.succeeded ? (
         <div className="p-6 text-center">
-          <h2 className="text-xl font-semibold">Thank you!</h2>
-          <p>Your message has been successfully sent.</p>
+          <h2 className="text-xl font-semibold">
+            {DATA.other.contactForm.success.title}
+          </h2>
+          <p>{DATA.other.contactForm.success.description}</p>
         </div>
       ) : (
         <PulsatingButton
@@ -73,7 +77,9 @@ export const ContactForm = () => {
           className="w-full"
           disabled={state.submitting}
         >
-          {state.submitting ? "Sending..." : "Send Message"}
+          {state.submitting
+            ? DATA.other.contactForm.submit.sending
+            : DATA.other.contactForm.submit.default}
         </PulsatingButton>
       )}
     </form>

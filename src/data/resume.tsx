@@ -132,6 +132,7 @@ export const DATA = {
       },
     },
   },
+  githubUsername: "227Faddi",
   projects: [
     {
       title: "FixSleep - Sleep Cycle Alarm",
@@ -234,4 +235,114 @@ export const DATA = {
     //     "https://github.com/user-attachments/assets/6dfbe639-aeed-4494-9582-37a9c64a6f5a",
     // },
   ],
+  features: {
+    solving: {
+      name: "Solving Problems with Creativity",
+      description:
+        "I love using my creative side and tech skills to build solutions.",
+      image: "/me.webp",
+      cta: "See my work",
+      href: "#projects",
+    },
+    chat: {
+      name: "Let's chat!",
+      description: "I’m always open to meeting new people and exchanging ideas.",
+      cta: "Book a Coffee Chat",
+      href: "https://cal.com/falilou-khouma-2oywjv/30min",
+    },
+    community: {
+      name: "Building Community Through Tech",
+      description:
+        "I actively take part in meetups and conferences to keep learning and connect with people who share the same passion.",
+      image: "/builders.webp",
+      cta: "Learn more",
+      href: "#community",
+      modal: {
+        url: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/",
+        title: "LinkedIn post",
+      },
+    },
+  },
+  community: [
+    {
+      name: "Speaking at Shopify",
+      description:
+        "Turning personal lessons into resources others can learn from.",
+      image: "/talk.webp",
+      href: "https://www.linkedin.com/feed/update/urn:li:activity:7419842128199180288/",
+      cta: "Learn more",
+      modal: {
+        url: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7419842128199180288",
+        title: "LinkedIn post",
+      },
+    },
+    {
+      name: "Volunteering at Confoo",
+      description: "Helping build the events that bring the community together.",
+      image: "/confoo.webp",
+      href: "https://www.linkedin.com/posts/faliloukhouma_confoo-softwareengineering-networking-activity-7303170251662200833-2dvl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEsWqmkB4kk1GeJW-XjUswuBVHfCkXxXJAs",
+      cta: "Learn more",
+      modal: {
+        url: "https://www.linkedin.com/embed/feed/update/urn:li:activity:7303170251662200833/",
+        title: "LinkedIn post",
+      },
+    },
+  ],
+  sections: {
+    about: {
+      name: "About",
+      title: "My Journey into Tech",
+    },
+    skills: {
+      name: "Skills",
+      title: "Tech I Work With",
+      description:
+        "From frontend to backend, these are the tools and technologies I use to build modern, scalable applications.",
+    },
+    projects: {
+      name: "Projects",
+      title: "What I’ve Built",
+      description:
+        "From simple websites to complex web applications, here are some of my favorite projects.",
+    },
+    community: {
+      name: "Community",
+      title: "Beyond the Code",
+      description:
+        "I grow by pushing myself outside my comfort zone. I stay active in the community to connect, learn, and contribute.",
+    },
+    contact: {
+      name: "Contact",
+      title: "Get in Touch",
+      description:
+        "Looking to build a website or have a quick coffee chat? You can schedule a meeting, reach out on LinkedIn, or simply send me a message using the form below.",
+    },
+  },
+  other: {
+    theme: {
+      label: "Theme",
+    },
+    contactForm: {
+      name: {
+        label: "Name",
+        placeholder: "Your name",
+      },
+      email: {
+        label: "Email",
+        placeholder: "you@example.com",
+      },
+      message: {
+        label: "Message",
+        placeholder: "Your message...",
+      },
+      submit: {
+        default: "Send Message",
+        sending: "Sending...",
+      },
+      success: {
+        title: "Thank you!",
+        description: "Your message has been successfully sent.",
+      },
+    },
+  },
 } as const;

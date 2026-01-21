@@ -41,7 +41,7 @@ export default function Navbar() {
               <ModeToggle />
             </TooltipTrigger>
             <TooltipContent>
-              <p>Theme</p>
+              <p>{DATA.other.theme.label}</p>
             </TooltipContent>
           </Tooltip>
         </DockIcon>
