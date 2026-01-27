@@ -140,7 +140,7 @@ export const DATA = {
       active: true,
       dates: "",
       description:
-        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 2,000+ downloads across iOS & Android.",
+        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 5,000+ downloads across iOS & Android.",
       technologies: [
         "TypeScript",
         "React Native",
@@ -246,7 +246,8 @@ export const DATA = {
     },
     chat: {
       name: "Let's chat!",
-      description: "I’m always open to meeting new people and exchanging ideas.",
+      description:
+        "I’m always open to meeting new people and exchanging ideas.",
       cta: "Book a Coffee Chat",
       href: "https://cal.com/falilou-khouma-2oywjv/30min",
     },
@@ -278,7 +279,8 @@ export const DATA = {
     },
     {
       name: "Volunteering at Confoo",
-      description: "Helping build the events that bring the community together.",
+      description:
+        "Helping build the events that bring the community together.",
       image: "/confoo.webp",
       href: "https://www.linkedin.com/posts/faliloukhouma_confoo-softwareengineering-networking-activity-7303170251662200833-2dvl?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEsWqmkB4kk1GeJW-XjUswuBVHfCkXxXJAs",
       cta: "Learn more",
