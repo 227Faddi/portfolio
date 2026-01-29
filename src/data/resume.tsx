@@ -100,7 +100,7 @@ export const DATA = {
       },
       YouTube: {
         name: "YouTube",
-        url: "https://www.youtube.com/@asyncfaddi",
+        url: "https://www.youtube.com/@asyncfaddi?sub_confirmation=1",
         icon: Icons.youtube,
         navbar: false,
         showInLinks: true,
