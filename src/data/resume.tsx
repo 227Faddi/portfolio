@@ -64,7 +64,7 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
         showInLinks: true,
-        order: 7,
+        order: 8,
       },
       LinkedIn: {
         name: "LinkedIn",
@@ -72,7 +72,7 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
         showInLinks: true,
-        order: 6,
+        order: 7,
       },
       X: {
         name: "X/Twitter",
@@ -80,7 +80,7 @@ export const DATA = {
         icon: Icons.x,
         navbar: true,
         showInLinks: true,
-        order: 2,
+        order: 5,
       },
       Email: {
         name: "Email",
@@ -96,7 +96,7 @@ export const DATA = {
         icon: Coffee,
         navbar: true,
         showInLinks: false,
-        order: 9,
+        order: 10,
       },
       YouTube: {
         name: "YouTube",
@@ -104,7 +104,7 @@ export const DATA = {
         icon: Icons.youtube,
         navbar: false,
         showInLinks: true,
-        order: 5,
+        order: 6,
       },
       Instagram: {
         name: "Instagram",
@@ -112,7 +112,7 @@ export const DATA = {
         icon: Icons.instagram,
         navbar: false,
         showInLinks: true,
-        order: 3,
+        order: 4,
       },
       TikTok: {
         name: "TikTok",
@@ -120,12 +120,20 @@ export const DATA = {
         icon: Icons.tiktok,
         navbar: false,
         showInLinks: true,
-        order: 4,
+        order: 3,
       },
       Portfolio: {
         name: "Portfolio",
         url: "/",
         icon: Icons.portfolio,
+        navbar: false,
+        showInLinks: true,
+        order: 2,
+      },
+      fixsleep: {
+        name: "Download FixSleep",
+        url: "https://www.fixsleep.app/get?utm_source=portfolio",
+        icon: Icons.fixsleep,
         navbar: false,
         showInLinks: true,
         order: 1,
@@ -136,7 +144,7 @@ export const DATA = {
   projects: [
     {
       title: "FixSleep - Sleep Cycle Alarm",
-      href: "https://www.fixsleep.app",
+      href: "https://www.fixsleep.app/get?utm_source=portfolio",
       active: true,
       dates: "",
       description:

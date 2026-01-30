@@ -1,11 +1,20 @@
 import { cn } from "@/lib/utils";
-import { GlobeIcon, MailIcon, UserRound } from "lucide-react";
+import { GlobeIcon, MailIcon, MoonStar, UserRound } from "lucide-react";
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
-  globe: (props: IconProps) => <GlobeIcon className={cn("w-6 h-6", props.className)} />,
-  email: (props: IconProps) => <MailIcon className={cn("w-6 h-6", props.className)} />,
-  portfolio: (props: IconProps) => <UserRound className={cn("w-6 h-6", props.className)} />,
+  globe: (props: IconProps) => (
+    <GlobeIcon className={cn("w-6 h-6", props.className)} />
+  ),
+  email: (props: IconProps) => (
+    <MailIcon className={cn("w-6 h-6", props.className)} />
+  ),
+  portfolio: (props: IconProps) => (
+    <UserRound className={cn("w-6 h-6", props.className)} />
+  ),
+  fixsleep: (props: IconProps) => (
+    <MoonStar className={cn("w-6 h-6", props.className)} />
+  ),
   tiktok: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
