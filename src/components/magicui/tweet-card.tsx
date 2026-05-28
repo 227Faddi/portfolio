@@ -212,6 +212,17 @@ export const TweetMedia = ({ tweet }: { tweet: EnrichedTweet }) => {
   );
 };
 
+const normalizeTweet = (tweet: Tweet): Tweet => ({
+  ...tweet,
+  entities: {
+    ...tweet.entities,
+    hashtags: tweet.entities?.hashtags ?? [],
+    symbols: tweet.entities?.symbols ?? [],
+    urls: tweet.entities?.urls ?? [],
+    user_mentions: tweet.entities?.user_mentions ?? [],
+  },
+});
+
 export const MagicTweet = ({
   tweet,
   components,
@@ -224,7 +235,7 @@ export const MagicTweet = ({
   className?: string;
   hideMedia?: boolean;
 }) => {
-  const enrichedTweet = enrichTweet(tweet);
+  const enrichedTweet = enrichTweet(normalizeTweet(tweet));
   return (
     <div
       className={cn(
