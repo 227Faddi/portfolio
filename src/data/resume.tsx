@@ -143,12 +143,12 @@ export const DATA = {
   githubUsername: "227Faddi",
   projects: [
     {
-      title: "FixSleep - Sleep Cycle Alarm",
+      title: "FixSleep - Smart Alarm Clock",
       href: "https://www.fixsleep.app/get?utm_source=portfolio",
       active: true,
       dates: "",
       description:
-        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 5,000+ downloads across iOS & Android.",
+        "A smart alarm app helping people wake up feeling rested. Features sleep sounds, bedtime reminders, and personalized wake-up suggestions. 10,000+ downloads and 300+ ratings across iOS & Android.",
       technologies: [
         "TypeScript",
         "React Native",
